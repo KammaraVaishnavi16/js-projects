@@ -2,12 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 body {
   background-color: antiquewhite;
+  /* overflow: hidden; */
 }
 * {
   margin: 0;
   padding: 0;
 }
 nav {
+  /* top: 0%;
+  position: sticky; */
   font-family: "Ubuntu", sans-serif;
 }
 /* when you use flex all items will come horizontal  */
@@ -35,7 +38,7 @@ nav ul li {
 }
 
 .container {
-  min-height: 65vh;
+  min-height: 60vh;
   background-color: black;
   color: white;
   font-family: "Varela Round", sans-serif;
@@ -43,12 +46,54 @@ nav ul li {
   width: 70%;
   margin: 23px auto;
   border-radius: 12px;
+  padding: 25px;
+  background-image: url("bg.jpg");
+  background-size: 95% 99%;
+  overflow: auto;
+}
+
+.songItemContainer {
+  margin-top: 50px;
+}
+.songItem {
+  height: 50px;
+  display: flex;
+  background-color: white;
+  color: black;
+  /* width: 85%; */
+  margin: 12px 0;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+.songItem img {
+  height: 45px;
+  width: 45px;
+  margin: 0 3px;
+  border-radius: 20px;
+}
+.timestamp {
+  padding: 0 10px;
+}
+.timestamp i {
+  cursor: pointer;
+}
+.songInfo {
+  position: absolute;
+  left: 10vw;
+  font-family: "Varela Round", sans-serif;
+}
+.songInfo img {
+  opacity: 0;
+  /* transition: opacity 1s ease-in; */
+  transition: opacity 0.3s ease-in;
 }
 .bottom {
   height: 80px;
   background-color: black;
   color: white;
   /* when we give bottom as 0, it goes completely dowm and then you have to set the previous container class min-height  */
+  position: sticky;
   bottom: 0;
   display: flex;
   flex-direction: column;
@@ -59,6 +104,7 @@ nav ul li {
 #myProgressBar {
   height: 5px;
   width: 80vw;
+  cursor: pointer;
 }
 
 .icons {
