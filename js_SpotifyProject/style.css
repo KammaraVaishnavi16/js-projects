@@ -9,8 +9,8 @@ body {
   padding: 0;
 }
 nav {
-  /* top: 0%;
-  position: sticky; */
+  top: 0%;
+  position: sticky;
   font-family: "Ubuntu", sans-serif;
 }
 /* when you use flex all items will come horizontal  */
@@ -24,7 +24,7 @@ nav ul {
 }
 nav ul li {
   padding: 0 12px;
-  /* cursor: pointer; */
+  cursor: pointer;
 }
 .brand img {
   padding: 0 8px;
@@ -112,4 +112,10 @@ nav ul li {
 }
 .icons i {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
 }
