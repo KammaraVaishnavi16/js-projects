@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+body {
+  background-color: antiquewhite;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  font-family: "Ubuntu", sans-serif;
+}
+/* when you use flex all items will come horizontal  */
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  height: 60px;
+  background-color: black;
+  color: white;
+}
+nav ul li {
+  padding: 0 12px;
+  /* cursor: pointer; */
+}
+.brand img {
+  padding: 0 8px;
+  width: 45px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+.container {
+  min-height: 65vh;
+  background-color: black;
+  color: white;
+  font-family: "Varela Round", sans-serif;
+  display: flex;
+  width: 70%;
+  margin: 23px auto;
+  border-radius: 12px;
+}
+.bottom {
+  height: 80px;
+  background-color: black;
+  color: white;
+  /* when we give bottom as 0, it goes completely dowm and then you have to set the previous container class min-height  */
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#myProgressBar {
+  height: 5px;
+  width: 80vw;
+}
+
+.icons {
+  margin-top: 12px;
+}
+.icons i {
+  cursor: pointer;
+}
